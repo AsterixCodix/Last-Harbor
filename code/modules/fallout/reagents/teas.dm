@@ -46,17 +46,17 @@
 	..()
 	. = TRUE
 
-/datum/reagent/consumable/tea/broctea
-	name = "Broc Tea"
-	description = "A soothing herbal rememedy steeped from the Broc Flower. Increases the clearance and flow of airways."
+/datum/reagent/consumable/tea/bloodleaftea
+	name = "Bloodleaf Tea"
+	description = "A scorching herbal brew brewed from the bloodflower. Increases the clearance and flow of airways."
 	color = "#FF6347"
 	nutriment_factor = 0
-	taste_description = "bitterness"
+	taste_description = "heat"
 	glass_icon_state = "tea"
-	glass_name = "Broc Tea"
-	glass_desc = "A soothing herbal rememedy steeped from the Broc Flower. Increases the clearance and flow of airways."
+	glass_name = "Bloodleaf Tea"
+	glass_desc = "A scorching herbal brew brewed from the bloodflower. Increases the clearance and flow of airways."
 
-/datum/reagent/consumable/tea/broctea/on_mob_life(mob/living/carbon/M)
+/datum/reagent/consumable/tea/bloodleaftea/on_mob_life(mob/living/carbon/M)
 	M.adjustOxyLoss(-4*REAGENTS_EFFECT_MULTIPLIER, 0)
 	M.nutrition = max(M.nutrition - 3, 0)
 	M.dizziness = max(0,M.dizziness-2)
@@ -65,7 +65,7 @@
 	M.AdjustSleeping(-20, FALSE)
 	if(M.getToxLoss() && prob(20))
 		M.adjustToxLoss(-1, 0)
-	M.adjust_bodytemperature(20 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
+	M.adjust_bodytemperature(30 * TEMPERATURE_DAMAGE_COEFFICIENT, 0, BODYTEMP_NORMAL)
 	..()
 	. = TRUE
 
