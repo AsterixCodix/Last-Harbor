@@ -11,9 +11,9 @@
 	production = 4
 	maturation = 4
 	growing_icon = 'icons/obj/hydroponics/growing_flowers.dmi'
-	icon_harvest = "bloodleaf-harvest"//temp
-	icon_grow = "bloodleaf-grow"//temp
-	icon_dead = "bloodleaf-dead"//temp
+	icon_harvest = "bloodleaf-harvest"
+	icon_grow = "bloodleaf-grow"
+	icon_dead = "bloodleaf-dead"
 	reagents_add = list(/datum/reagent/medicine/dexalin = 0.2, /datum/reagent/medicine/salglu_solution = 0.05, /datum/reagent/consumable/nutriment = 0.1, /datum/reagent/medicine/bicaridine = 0.1,)
 
 /obj/item/reagent_containers/food/snacks/grown/bloodleaf
@@ -23,5 +23,5 @@
 	icon_state = "bloodleaf"
 	//slot_flags = SLOT_HEAD
 	filling_color = "#FF6347"
-	juice_results = list(/datum/reagent/consumable/tea/bloodleaftea = 0)//temp
-	distill_reagent = /datum/reagent/consumable/ethanol/bloodleafbrew//temp
+	juice_results = list(/datum/reagent/consumable/tea/bloodleaftea = 0)
+	distill_reagent = /datum/reagent/consumable/ethanol/bloodleaftequila
